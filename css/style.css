@@ -55,7 +55,11 @@ body, html {
     position: absolute;
     top: 75%;
     transform: translateY(-50%);
+    transition: transform 0.3s ease;
+    transform-origin: center;
+    cursor: pointer;
 }
+
 
 @media (max-width: 1200px) {
     .navbar {
