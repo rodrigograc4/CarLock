@@ -1,6 +1,6 @@
 body, html {
     margin: 0;
-    padding-top: env(safe-area-inset-top);
+    padding: 0;
     width: 100%;
     height: 100%;
     font-family: Arial, sans-serif;
@@ -61,6 +61,7 @@ body, html {
 @media (max-width: 768px) {
     .navbar {
         width: 90%;
+        padding-top: env(safe-area-inset-top);
     }
 
     .navbar .logo img {
@@ -97,10 +98,35 @@ body, html {
 .secondary-image {
     width: 120px;
     position: absolute;
-    margin-top: 25%;
+    top: 75%;
     transform: translateY(-50%);
     transition: transform 0.3s ease;
     transform-origin: center;
     cursor: pointer;
 }
 
+.data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    position: relative;
+}
+
+.data-image {
+    width: 120px;
+}
+
+.data h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    background-color: white;
+    padding: 0.5em 1em;
+    border-radius: 10px;
+}
+
+.data h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
