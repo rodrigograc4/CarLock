@@ -1,6 +1,7 @@
 body, html {
     margin: 0;
-    padding-top: env(safe-area-inset-top);
+    margin-top: env(safe-area-inset-top);
+    padding: 0;
     width: 100%;
     height: 100%;
     font-family: Arial, sans-serif;
@@ -35,31 +36,6 @@ body, html {
 .navbar .registry img {
     height: 50px;
 }
-
-.content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    position: relative;
-}
-
-.main-image {
-    width: 400px;
-    margin-bottom: 20px;
-}
-
-.secondary-image {
-    width: 120px;
-    position: absolute;
-    top: 75%;
-    transform: translateY(-50%);
-    transition: transform 0.3s ease;
-    transform-origin: center;
-    cursor: pointer;
-}
-
 
 @media (max-width: 1200px) {
     .navbar {
@@ -104,3 +80,27 @@ body, html {
         width: 120px;
     }
 }
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    position: relative;
+}
+
+.main-image {
+    width: 400px;
+    margin-bottom: 20px;
+}
+
+.secondary-image {
+    width: 120px;
+    position: absolute;
+    margin-top: 25%;
+    transition: transform 0.3s ease;
+    transform-origin: center;
+    cursor: pointer;
+}
+
