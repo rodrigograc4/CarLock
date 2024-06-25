@@ -36,6 +36,30 @@ body, html {
     height: 50px;
 }
 
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    position: relative;
+}
+
+.main-image {
+    width: 400px;
+    margin-bottom: 20px;
+}
+
+.secondary-image {
+    width: 120px;
+    position: absolute;
+    top: 75%;
+    transform: translateY(-50%);
+    transition: transform 0.3s ease;
+    transform-origin: center;
+    cursor: pointer;
+}
+
 @media (max-width: 1200px) {
     .navbar {
         width: 85%;
@@ -79,30 +103,6 @@ body, html {
     .secondary-image {
         width: 120px;
     }
-}
-
-.content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    position: relative;
-}
-
-.main-image {
-    width: 400px;
-    margin-bottom: 20px;
-}
-
-.secondary-image {
-    width: 120px;
-    position: absolute;
-    top: 75%;
-    transform: translateY(-50%);
-    transition: transform 0.3s ease;
-    transform-origin: center;
-    cursor: pointer;
 }
 
 .data {

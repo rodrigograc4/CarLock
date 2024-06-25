@@ -17,22 +17,44 @@
     <nav class="navbar">
         <div class="container">
             <div class="logo">
-                <img src="images/carLock_logo.png" alt="CarLock Logo">
+                <a href="/Carlock/"><img src="images/carLock_logo.png" alt="CarLock Logo"></a>
             </div>
             <div class="registry">
-                <img src="images/registry.png" alt="Registry">
+                <a href="/Carlock/registry"><img src="images/registry.png" alt="Registry"></a>
             </div>
         </div>
     </nav>
     <div class="data">
         <img src="images/lock.png" alt="Data Image" class="data-image">
-        <h1 id="last-lock">21:06   25/05/2024</h1>
-        <h2 id="last-lock-1">20:06   25/06/2024</h2>
-        <h2 id="last-lock-2">19:06   25/07/2024</h2>
-        <h2 id="last-lock-3">18:06   25/08/2024</h2>
-        <h2 id="last-lock-4">17:06   25/09/2024</h2>
-        <h2 id="last-lock-5">16:06   25/10/2024</h2>        
+        <h1 id="last-lock">00:00   01/01/2024</h1>
+        <h2 id="last-lock-1">00:00   01/01/2024</h2>
+        <h2 id="last-lock-2">00:00   01/01/2024</h2>
+        <h2 id="last-lock-3">00:00   01/01/2024</h2>
+        <h2 id="last-lock-4">00:00   01/01/2024</h2>
+        <h2 id="last-lock-5">00:00   01/01/2024</h2>        
     </div>
 
+    <script>
+        window.onload = function() {
+            if (localStorage.getItem("last-lock")) {
+                document.getElementById("last-lock").innerHTML = localStorage.getItem("last-lock");
+            }
+            if (localStorage.getItem("last-lock-1")) {
+                document.getElementById("last-lock-1").innerHTML = localStorage.getItem("last-lock-1");
+            }
+            if (localStorage.getItem("last-lock-2")) {
+                document.getElementById("last-lock-2").innerHTML = localStorage.getItem("last-lock-2");
+            }
+            if (localStorage.getItem("last-lock-3")) {
+                document.getElementById("last-lock-3").innerHTML = localStorage.getItem("last-lock-3");
+            }
+            if (localStorage.getItem("last-lock-4")) {
+                document.getElementById("last-lock-4").innerHTML = localStorage.getItem("last-lock-4");
+            }
+            if (localStorage.getItem("last-lock-5")) {
+                document.getElementById("last-lock-5").innerHTML = localStorage.getItem("last-lock-5");
+            }
+        }
+    </script>
 </body>
 </html>
