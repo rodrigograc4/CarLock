@@ -19,6 +19,7 @@ body, html {
     top: 0;
     left: 50%;
     transform: translateX(-50%);
+    z-index: 1000;
 }
 
 .navbar .container {
@@ -28,12 +29,9 @@ body, html {
     width: 100%;
 }
 
-.navbar .logo img {
+.navbar .logo img, .navbar .registry img {
     height: 50px;
-}
-
-.navbar .registry img {
-    height: 50px;
+    cursor: pointer;
 }
 
 .content {
@@ -65,11 +63,7 @@ body, html {
         width: 85%;
     }
 
-    .navbar .logo img {
-        height: 40px;
-    }
-
-    .navbar .registry img {
+    .navbar .logo img, .navbar .registry img {
         height: 40px;
     }
 
@@ -88,11 +82,7 @@ body, html {
         padding-top: calc(1rem + env(safe-area-inset-top));
     }
 
-    .navbar .logo img {
-        height: 30px;
-    }
-
-    .navbar .registry img {
+    .navbar .logo img, .navbar .registry img {
         height: 30px;
     }
 
