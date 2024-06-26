@@ -26,12 +26,12 @@
     </nav>
     <div class="data">
         <img src="images/lock.png" alt="Data Image" class="data-image">
-        <h1 id="last-lock">00:00   01/01/2024</h1>
-        <h2 id="last-lock-1">00:00   01/01/2024</h2>
-        <h2 id="last-lock-2">00:00   01/01/2024</h2>
-        <h2 id="last-lock-3">00:00   01/01/2024</h2>
-        <h2 id="last-lock-4">00:00   01/01/2024</h2>
-        <h2 id="last-lock-5">00:00   01/01/2024</h2>        
+        <h1 id="last-lock"></h1>
+        <h2 id="last-lock-1"> </h2>
+        <h2 id="last-lock-2"> </h2>
+        <h2 id="last-lock-3"> </h2>
+        <h2 id="last-lock-4"> </h2>
+        <h2 id="last-lock-5"> </h2>        
     </div>
 
     <script>
@@ -47,35 +47,35 @@
                 document.getElementById("last-lock-1").innerHTML = localStorage.getItem("last-lock-1");
             }
             else {
-                document.getElementById("last-lock-1").innerHTML = "";
+                document.getElementById("last-lock-1").innerHTML = " ";
             }
 
             if (localStorage.getItem("last-lock-2") != null) {
                 document.getElementById("last-lock-2").innerHTML = localStorage.getItem("last-lock-2");
             }
             else {
-                document.getElementById("last-lock-2").innerHTML = "";
+                document.getElementById("last-lock-2").innerHTML = " ";
             }
 
             if (localStorage.getItem("last-lock-3") != null) {
                 document.getElementById("last-lock-3").innerHTML = localStorage.getItem("last-lock-3");
             }
             else {
-                document.getElementById("last-lock-3").innerHTML = "";
+                document.getElementById("last-lock-3").innerHTML = " ";
             }
 
             if (localStorage.getItem("last-lock-4") != null) {
                 document.getElementById("last-lock-4").innerHTML = localStorage.getItem("last-lock-4");
             }
             else {
-                document.getElementById("last-lock-4").innerHTML = "";
+                document.getElementById("last-lock-4").innerHTML = " ";
             }
 
             if (localStorage.getItem("last-lock-5") != null) {
                 document.getElementById("last-lock-5").innerHTML = localStorage.getItem("last-lock-5");
             }
             else {
-                document.getElementById("last-lock-5").innerHTML = "";
+                document.getElementById("last-lock-5").innerHTML = " ";
             }
         }
     </script>
