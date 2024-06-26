@@ -39,20 +39,43 @@
             if (localStorage.getItem("last-lock") != null) {
                 document.getElementById("last-lock").innerHTML = localStorage.getItem("last-lock");
             }
+            else {
+                document.getElementById("last-lock").innerHTML = "No Locks Yet!";
+            }
+
             if (localStorage.getItem("last-lock-1") != null) {
                 document.getElementById("last-lock-1").innerHTML = localStorage.getItem("last-lock-1");
             }
+            else {
+                document.getElementById("last-lock-1").innerHTML = "";
+            }
+
             if (localStorage.getItem("last-lock-2") != null) {
                 document.getElementById("last-lock-2").innerHTML = localStorage.getItem("last-lock-2");
             }
+            else {
+                document.getElementById("last-lock-2").innerHTML = "";
+            }
+
             if (localStorage.getItem("last-lock-3") != null) {
                 document.getElementById("last-lock-3").innerHTML = localStorage.getItem("last-lock-3");
             }
+            else {
+                document.getElementById("last-lock-3").innerHTML = "";
+            }
+
             if (localStorage.getItem("last-lock-4") != null) {
                 document.getElementById("last-lock-4").innerHTML = localStorage.getItem("last-lock-4");
             }
+            else {
+                document.getElementById("last-lock-4").innerHTML = "";
+            }
+
             if (localStorage.getItem("last-lock-5") != null) {
                 document.getElementById("last-lock-5").innerHTML = localStorage.getItem("last-lock-5");
+            }
+            else {
+                document.getElementById("last-lock-5").innerHTML = "";
             }
         }
     </script>
